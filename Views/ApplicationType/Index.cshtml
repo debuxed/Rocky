@@ -32,6 +32,16 @@
                     {
                         <tr>
                             <td width="100%">@obj.Name</td>
+                            <td class="text-center">
+                                <div class="w-75 btn-group btn" role="group">
+                                    <a asp-controller="ApplicationType" asp-action="Edit" asp-route-Id="@obj.Id" class="btn btn-primary mx-2">
+                                        Edit
+                                    </a>
+                                    <a asp-controller="ApplicationType" asp-action="Delete" asp-route-Id="@obj.Id" class="btn btn-danger mx-2">
+                                        Delete
+                                    </a>
+                                </div>
+                            </td>
                         </tr>
                     }
                 </tbody>
